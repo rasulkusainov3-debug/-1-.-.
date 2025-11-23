@@ -23,6 +23,7 @@ from model import Model
 
 model = Model()
 * Загрузить обученные веса
+
 model.load("best")
 * Вам нужно создать два объекта Dataset, указав пути к test2 и test3:
 
