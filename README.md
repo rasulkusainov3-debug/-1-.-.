@@ -18,15 +18,19 @@
 ## Как проверять мою модель (для А. В. Хвостикова)
 Открыть мой Colab-ноутбук из GitHub.
 * Инициализировать модель
+
 from model import Model
+
 model = Model()
 * Загрузить обученные веса
 model.load("best")
 * Вам нужно создать два объекта Dataset, указав пути к test2 и test3:
+
 test2_dataset = Dataset("/content/test2")   # путь к test2
 
 test3_dataset = Dataset("/content/test3")   # путь к test3
-
 * Прогнать test2 и test3 через модель
+
 preds2 = model.test_on_dataset(test2_dataset)
+
 preds3 = model.test_on_dataset(test3_dataset)
